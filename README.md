@@ -68,18 +68,16 @@ Vor jeder Wiederholung wird der Startwert des Zufallszahlengenerators determinis
 ├── skalierung/
 │   ├── n_vergleich_single_v5.R     # Skalierungsvergleich über Trainingsgrößen
 │   ├── n_vergleich_merge_v5.R      # Zusammenführung + Ereigniszahl-Auswertung (Uno's C)
-│   └── facet_plot_baender_2spalten_v5.R  # Abbildung: C-Index nach Trainingsgröße mit SD-Bändern
 ├── interpretierbarkeit/
 │   ├── forest_plot_hr_v5_untereinander.R # Forest-Plot der Hazard Ratios (naiv-Cox)
 │   ├── schoenfeld_ph_v3.R          # PH-Diagnostik über Schoenfeld-Residuen
 │   └── rsf_importance_v3.R         # Permutation Variable Importance (RSF)
-├── sensitivitaet/
+├── sensitivität/
 │   └── uno_c_sensitivitaet.R       # Sensitivitätsanalyse Harrell vs. Uno
 └── synthese/
     └── tradeoff_plot_v5.R          # Trade-off Vorhersagegüte vs. Interpretierbarkeit
 ```
 
-*(Die Ordnerstruktur ist ein Vorschlag – passe sie an deine tatsächliche Ablage an.)*
 
 **Empfohlene Reihenfolge:**
 
