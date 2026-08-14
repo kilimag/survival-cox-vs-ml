@@ -103,4 +103,4 @@ Vor jeder Wiederholung wird der Startwert des Zufallszahlengenerators determinis
 
 Bei Verwendung dieses Codes bitte die zugehörige Bachelorarbeit angeben:
 
-> [Nachname, Vorname] ([Jahr]). *Prädiktive Performanz vs. Interpretierbarkeit: Vergleich klassischer und Deep-Learning-Ansätze in der Überlebenszeitanalyse.* Bachelorarbeit, [Hochschule].
+> [Fleischer, Kilian] ([2026]). *Prädiktive Performanz vs. Interpretierbarkeit: Vergleich klassischer und Deep-Learning-Ansätze in der Überlebenszeitanalyse.* Bachelorarbeit, [Technische Hochschule Augsburg].
