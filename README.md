@@ -67,7 +67,7 @@ Vor jeder Wiederholung wird der Startwert des Zufallszahlengenerators determinis
 │   └── plots_hauptlauf_v4.R        # Abbildungen: C-Index und IBS nach Zensierung
 ├── skalierung/
 │   ├── n_vergleich_single_v5.R     # Skalierungsvergleich über Trainingsgrößen
-│   ├── n_vergleich_merge_v5.R      # Zusammenführung + Ereigniszahl-Auswertung (Uno's C)
+│   ├── n_vergleich_merge_v5.R      # Zusammenführung + Ereigniszahl-Auswertung (Uno's C) + Plot
 ├── interpretierbarkeit/
 │   ├── forest_plot_hr_v5_untereinander.R # Forest-Plot der Hazard Ratios (naiv-Cox)
 │   ├── schoenfeld_ph_v3.R          # PH-Diagnostik über Schoenfeld-Residuen
