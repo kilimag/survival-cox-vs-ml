@@ -7,7 +7,7 @@
 #
 # HINWEIS: Diese Basis-Version zeigt NUR die geschätzten HRs.
 # Das Einzeichnen der "Wahrheit" (x3, x4) kommt als Erweiterung
-# dazu, sobald die Vorgehensweise mit dem Prof geklärt ist.
+# dazu im Skript "forest_plot_hr_v5_untereinander". 
 #
 # Zwei Zensierungsstufen (20% und 50%) - 50% war Prof-Wunsch.
 # ===================================================================
