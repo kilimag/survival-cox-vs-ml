@@ -1,4 +1,6 @@
 # ===================================================================
+# HINWEIS: Zuerst das Skript "forestplotest.R" ausführen
+# ===================================================================
 # FOREST-PLOT der Hazard Ratios (naives Cox) - UNTEREINANDER
 # mit echten mathematischen Formelzeichen (pi, Indizes, Hochzahlen)
 # -------------------------------------------------------------------
