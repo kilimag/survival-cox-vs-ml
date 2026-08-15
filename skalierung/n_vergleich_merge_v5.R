@@ -86,7 +86,7 @@ cat("Gespeichert: Plot_v5_nVergleich_facet_Harrell.png\n")
 
 # -------------------------------------------------------------------
 # 5. EREIGNISZAHL-PLOT - mit UNO'S C
-#    (Vergleich ueber Zensierungsstufen -> Uno noetig)
+#    (Vergleich über Zensierungsstufen -> Uno nötig)
 # -------------------------------------------------------------------
 ev_dat <- summ %>% filter(Mass == "Uno", n_valid > 0)
 
@@ -111,7 +111,7 @@ ggsave("Plot_v5_nVergleich_Events_Uno.png", p_ev,
 cat("Gespeichert: Plot_v5_nVergleich_Events_Uno.png\n")
 
 # -------------------------------------------------------------------
-# 6. NA-Quote pro Zelle berichten (fuer DeepHit-Ausfaelle)
+# 6. NA-Quote pro Zelle berichten (fuer DeepHit-Ausfälle)
 # -------------------------------------------------------------------
 na_report <- long %>%
   filter(Mass == "Harrell") %>%
@@ -132,7 +132,7 @@ if (nrow(na_report) > 0) {
 cat("\nFertig.\n")
 
 # ===================================================================
-# FACETTEN-PLOT (Harrell) MIT SD-BAENDERN - 2 SPALTEN, GROSS
+# FACETTEN-PLOT (Harrell) MIT SD-BAENDERN - 2 SPALTEN, GROß
 # x-Achse (100/1000/10000) unter JEDEM Panel
 # -------------------------------------------------------------------
 # Erzeugt: Plot_v5_facet_Baender_2spalten.png
