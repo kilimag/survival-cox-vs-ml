@@ -74,8 +74,9 @@ Vor jeder Wiederholung wird der Startwert des Zufallszahlengenerators determinis
 │   ├── n_vergleich_single_v5.R     # Skalierungsvergleich über Trainingsgrößen
 │   ├── n_vergleich_merge_v5.R      # Zusammenführung + Ereigniszahl-Auswertung (Uno's C) + Plot
 ├── interpretierbarkeit/
-│   ├── forest_plot_hr_v5_untereinander.R # Forest-Plot der Hazard Ratios (naiv-Cox)
+│   ├── forest_plot_hr_v5_untereinander.R # Forest-Plot der Hazard Ratios mit Wahrheit (naiv-Cox)
 │   ├── schoenfeld_ph_v3.R          # PH-Diagnostik über Schoenfeld-Residuen
+│   ├── forestplotest.R             # HR's rechnen und Plot ohne Wahrheit
 │   └── rsf_importance_v3.R         # Permutation Variable Importance (RSF)
 ├── sensitivität/
 │   └── uno_c_sensitivitaet.R       # Sensitivitätsanalyse Harrell vs. Uno
@@ -87,10 +88,11 @@ Vor jeder Wiederholung wird der Startwert des Zufallszahlengenerators determinis
 **Empfohlene Reihenfolge:**
 
 1. **Hauptlauf** ausführen (`hauptlauf_v4_repro.R`) → erzeugt die zentralen Ergebnis-CSVs
-2. **Skalierungsvergleich** ausführen (`n_vergleich_single_v5.R`, dann `n_vergleich_merge_v5.R`)
-3. **Interpretierbarkeits-Analysen** ausführen (Forest-Plot, Schoenfeld, RSF-Importance)
-4. **Sensitivitätsanalyse** ausführen (`uno_c_sensitivitaet.R`)
-5. **Plot-Skripte** ausführen → erzeugen die Abbildungen der Arbeit
+2. Dann (`plots_hauptlauf_v4.R`) → erzeugt die Plots
+3. **Skalierungsvergleich** ausführen (`n_vergleich_single_v5.R`, dann `n_vergleich_merge_v5.R`)
+4. **Interpretierbarkeits-Analysen** ausführen (`forestplotest.R`) → (`forest_plot_hr_v5_untereinander.R`) → (`schoenfeld_ph_v3.R`) → (`rsf_importance_v3.R`) 
+5. **Sensitivitätsanalyse** ausführen (`uno_c_sensitivitaet.R`)
+6. **Synthese** ausführen (`tradeoff_plot_v5.R`)
 
 ---
 
