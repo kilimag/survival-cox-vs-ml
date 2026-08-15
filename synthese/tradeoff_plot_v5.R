@@ -4,7 +4,7 @@
 # y-Achse: C-Index, gemittelt über alle 7 Zensierungsstufen (v4-Daten)
 # x-Achse: Interpretierbarkeit (dreistufig, aus Abschnitt 3.4.4)
 #
-# Ließt Ergebnisse_v4_CIndex.csv, mittelt pro Modell über die Stufen.
+# Liest Ergebnisse_v4_CIndex.csv, mittelt pro Modell über die Stufen.
 # Caption entfernt (kommt als Word-Bildunterschrift).
 #
 # Erzeugt: Plot_v5_Tradeoff.png
