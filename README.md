@@ -33,7 +33,8 @@ install.packages(c(
   "survC1",          # Uno's C-Index
   "pec",             # Integrierter Brier Score  [falls verwendet – ggf. anpassen]
   "ggplot2",         # Abbildungen
-  "dplyr"            # Datenaufbereitung
+  "dplyr",           # Datenaufbereitung
+  "reshape2"       # Umformen der Ergebnistabellen (melt/dcast) für die Auswertung
 ))
 ```
 
