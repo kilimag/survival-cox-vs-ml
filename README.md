@@ -23,7 +23,7 @@ Bewertet wird über den C-Index (Diskriminierung) und den Integrierten Brier Sco
 ## Voraussetzungen
 
 ### R
-Der Code wurde mit **R Version [X.X.X]** entwickelt. Folgende Pakete werden benötigt:
+Der Code wurde mit **R Version 4.4.3** entwickelt. Folgende Pakete werden benötigt:
 
 ```r
 install.packages(c(
