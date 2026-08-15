@@ -41,6 +41,12 @@ install.packages(c(
 DeepSurv und DeepHit werden über das R-Paket `survivalmodels` angesprochen, das im Hintergrund **Python mit PyTorch und dem Paket `pycox`** benötigt. Die Einrichtung erfolgt über `reticulate`:
 
 ```r
+install.packages("reticulate")
+reticulate::install_miniconda()
+```
+Anschließend werden PyTorch und pycox eingerichtet:
+
+```r
 library(survivalmodels)
 install_pycox(pip = TRUE, install_torch = TRUE)
 ```
