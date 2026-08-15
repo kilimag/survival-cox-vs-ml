@@ -60,8 +60,6 @@ Vor jeder Wiederholung wird der Startwert des Zufallszahlengenerators determinis
 ```
 .
 ├── README.md
-├── simulation/
-│   └── [datengenerierung.R]        # Datengenerierungsprozess (Hazard, Zensierung, Kalibrierung)
 ├── hauptlauf/
 │   ├── hauptlauf_v4_repro.R        # zentraler Performance-Vergleich (alle 5 Modelle, 7 Zensierungsstufen)
 │   └── plots_hauptlauf_v4.R        # Abbildungen: C-Index und IBS nach Zensierung
