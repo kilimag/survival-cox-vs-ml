@@ -1,10 +1,10 @@
 # ===================================================================
 # TRADE-OFF-PLOT: Vorhersageguete vs. Interpretierbarkeit (v5)
 # -------------------------------------------------------------------
-# y-Achse: C-Index, gemittelt ueber alle 7 Zensierungsstufen (v4-Daten)
+# y-Achse: C-Index, gemittelt über alle 7 Zensierungsstufen (v4-Daten)
 # x-Achse: Interpretierbarkeit (dreistufig, aus Abschnitt 3.4.4)
 #
-# Liest Ergebnisse_v4_CIndex.csv, mittelt pro Modell ueber die Stufen.
+# Ließt Ergebnisse_v4_CIndex.csv, mittelt pro Modell über die Stufen.
 # Caption entfernt (kommt als Word-Bildunterschrift).
 #
 # Erzeugt: Plot_v5_Tradeoff.png
@@ -15,7 +15,7 @@ library(dplyr)
 
 ci <- read.csv("Ergebnisse_v4_CIndex.csv")
 
-# Pro Modell ueber alle gueltigen Zensierungsstufen mitteln
+# Pro Modell über alle gültigen Zensierungsstufen mitteln
 agg <- ci %>%
   filter(!is.na(Mean), n_valid > 0) %>%
   group_by(Modell) %>%
@@ -30,7 +30,7 @@ interp <- data.frame(
 
 dat <- merge(agg, interp, by = "Modell")
 
-# schoene Anzeigenamen
+# schöne Anzeigenamen
 disp <- c(CoxPH="naiv-Cox", OracleCox="Oracle-Cox", RSF="RSF",
           DeepSurv="DeepSurv", DeepHit="DeepHit")
 dat$Label <- disp[dat$Modell]
@@ -38,7 +38,7 @@ dat$Label <- disp[dat$Modell]
 farben <- c("CoxPH"="#E41A1C", "OracleCox"="#377EB8", "RSF"="#4DAF4A",
             "DeepSurv"="#984EA3", "DeepHit"="#FF7F00")
 
-# leichtes Jitter auf x, damit die drei "niedrig"-Punkte nicht uebereinander liegen
+# leichtes Jitter auf x, damit die drei "niedrig"-Punkte nicht übereinander liegen
 set.seed(1)
 dat$Interp_jit <- dat$Interp + ifelse(dat$Interp==1, c(-0.12,0,0.12)[rank(dat$C_Mean[dat$Interp==1])], 0)
 
