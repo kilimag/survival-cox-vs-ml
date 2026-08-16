@@ -27,14 +27,14 @@ Der Code wurde mit **R Version 4.4.3** entwickelt. Folgende Pakete werden benöt
 
 ```r
 install.packages(c(
-  "survival",        # Cox-Modell, Schoenfeld-Residuen
-  "ranger",          # Random Survival Forest
-  "survivalmodels",  # DeepSurv, DeepHit (Schnittstelle zu pycox)
-  "survC1",          # Uno's C-Index
-  "pec",             # Integrierter Brier Score  [falls verwendet – ggf. anpassen]
-  "ggplot2",         # Abbildungen
-  "dplyr",           # Datenaufbereitung
-  "reshape2"       # Umformen der Ergebnistabellen (melt/dcast) für die Auswertung
+  "survival",        # Cox-Modell, Schoenfeld-Residuen # Version: 3.8-6
+  "ranger",          # Random Survival Forest  # Version: 0.18.0
+  "survivalmodels",  # DeepSurv, DeepHit (Schnittstelle zu pycox)  # Version: 0.1.19
+  "survC1",          # Uno's C-Index  # Version: 1.0-3
+  "pec",             # Integrierter Brier Score   # Version: 
+  "ggplot2",         # Abbildungen # Version: 4.0.2
+  "dplyr",           # Datenaufbereitung # Version: 1.2.0
+  "reshape2"       # Umformen der Ergebnistabellen (melt/dcast) für die Auswertung # Version: 1.4.5
 ))
 ```
 
