@@ -109,4 +109,4 @@ Vor jeder Wiederholung wird der Startwert des Zufallszahlengenerators determinis
 Bei Verwendung dieses Codes bitte die zugehörige Bachelorarbeit angeben:
 
 > Fleischer, Kilian (2026). *Prädiktive Performanz vs. Interpretierbarkeit:
-Ein systematischer Vergleich von Deep-Learning-Modellen und klassischen statistischen Ansätzen in der Überlebenszeitanalyse* Bachelorarbeit, Technische Hochschule Augsburg.
+Ein systematischer Vergleich von Deep-Learning-Modellen und klassischen statistischen Ansätzen in der Überlebenszeitanalyse*. Bachelorarbeit, Technische Hochschule Augsburg.
